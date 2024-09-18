@@ -1,0 +1,249 @@
+<html></html>
+ <head>
+  <title>
+   Trading Platform
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1a1c2b;
+            color: #fff;
+        }
+        .sidebar {
+            background-color: #2a2d3e;
+        }
+        .sidebar a {
+            color: #fff;
+        }
+        .sidebar a:hover {
+            background-color: #3a3d4e;
+        }
+        .chart-container {
+            background-image: url('https://placehold.co/800x600?text=Mountain+Background');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-green {
+            background-color: #00b894;
+        }
+        .btn-red {
+            background-color: #d63031;
+        }
+  </style>
+ </head>
+ <body class="flex h-screen">
+  <div class="sidebar w-1/6 p-4 flex flex-col">
+   <div class="flex items-center mb-6">
+    <img alt="Logo" class="mr-2" height="40" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Hh5RPsKhtBPsWCFSiEKnUJ6x/user-8qgiVpCV0U0b7zDjfFInHgjl/img-x0Kblki7seiUjWRjauS1gN6T.png?st=2024-09-18T02%3A01%3A58Z&amp;se=2024-09-18T04%3A01%3A58Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-18T00%3A57%3A09Z&amp;ske=2024-09-19T00%3A57%3A09Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=by1VlMAsH4Oy2sr4qhUkZdWnPOVEu32bJKPU8%2Bu760k%3D" width="40"/>
+    <span class="text-xl font-bold">
+     PocketOption
+    </span>
+   </div>
+   <nav class="flex flex-col space-y-4">
+    <a class="flex items-center p-2 rounded hover:bg-gray-700" href="#">
+     <i class="fas fa-chart-line mr-2">
+     </i>
+     Торговля
+    </a>
+    <a class="flex items-center p-2 rounded hover:bg-gray-700" href="#">
+     <i class="fas fa-wallet mr-2">
+     </i>
+     Финансы
+    </a>
+    <a class="flex items-center p-2 rounded hover:bg-gray-700" href="#">
+     <i class="fas fa-user mr-2">
+     </i>
+     Профиль
+    </a>
+    <a class="flex items-center p-2 rounded hover:bg-gray-700" href="#">
+     <i class="fas fa-store mr-2">
+     </i>
+     Маркет
+    </a>
+    <a class="flex items-center p-2 rounded hover:bg-gray-700" href="#">
+     <i class="fas fa-trophy mr-2">
+     </i>
+     Достижения
+    </a>
+    <a class="flex items-center p-2 rounded hover:bg-gray-700" href="#">
+     <i class="fas fa-comments mr-2">
+     </i>
+     Чат
+    </a>
+    <a class="flex items-center p-2 rounded hover:bg-gray-700" href="#">
+     <i class="fas fa-question-circle mr-2">
+     </i>
+     Помощь
+    </a>
+   </nav>
+   <a class="mt-auto flex items-center p-2 rounded hover:bg-gray-700" href="#">
+    <i class="fas fa-sign-out-alt mr-2">
+    </i>
+    Выход
+   </a>
+  </div>
+  <div class="flex-1 flex flex-col">
+   <div class="flex items-center justify-between p-4 bg-gray-800">
+    <div class="flex items-center space-x-4">
+     <div class="text-sm">
+      <div>
+       Статус:
+       <span class="text-green-500">
+        Подключен. Реальный счет.
+       </span>
+      </div>
+      <div>
+       Графиков в работе: 0/0
+      </div>
+      <div>
+       Лицензия до: 18.09.2024 09:59
+      </div>
+     </div>
+    </div>
+    <div class="flex items-center space-x-4">
+     <div class="text-sm">
+      <div>
+       QT Real Н
+      </div>
+      <div>
+       $0
+      </div>
+     </div>
+     <button class="bg-green-500 text-white px-4 py-2 rounded">
+      ПОПОЛНИТЬ СЧЕТ
+     </button>
+    </div>
+   </div>
+   <div class="flex-1 flex">
+    <div class="chart-container flex-1 relative">
+     <div class="absolute inset-0 flex items-center justify-center">
+      <div class="text-4xl font-bold">
+       Chart Area
+      </div>
+     </div>
+    </div>
+    <div class="w-1/3 p-4 bg-gray-800">
+     <div class="flex items-center justify-between mb-4">
+      <div class="text-sm">
+       <div>
+        Время UTC+6
+       </div>
+       <div class="text-2xl">
+        09:03:00
+       </div>
+      </div>
+      <div class="text-sm">
+       <div>
+        Сумма
+       </div>
+       <div class="text-2xl">
+        $22.89
+       </div>
+      </div>
+     </div>
+     <div class="mb-4">
+      <div class="text-sm">
+       Выплата
+      </div>
+      <div class="text-2xl text-green-500">
+       +50%
+       <span class="text-white">
+        $34.34
+       </span>
+       Прибыль
+       <span class="text-white">
+        $11.45
+       </span>
+      </div>
+     </div>
+     <div class="mb-4">
+      <button class="btn-green w-full py-2 rounded mb-2">
+       КУПИТЬ
+      </button>
+      <button class="btn-red w-full py-2 rounded">
+       ПРОДАТЬ
+      </button>
+     </div>
+     <div class="mb-4">
+      <button class="bg-blue-500 w-full py-2 rounded">
+       AI TRADING
+      </button>
+     </div>
+     <div class="mb-4">
+      <div class="text-sm">
+       Актив
+      </div>
+      <select class="w-full p-2 rounded bg-gray-700 text-white">
+       <option>
+        EUR/USD
+       </option>
+      </select>
+     </div>
+     <div class="mb-4">
+      <div class="text-sm">
+       Цена открытия
+      </div>
+      <div class="text-2xl">
+       1.11274
+      </div>
+     </div>
+     <div class="mb-4">
+      <div class="text-sm">
+       Текущая цена
+      </div>
+      <div class="text-2xl">
+       1.11283
+      </div>
+     </div>
+     <div class="mb-4">
+      <div class="text-sm">
+       Выплата
+      </div>
+      <div class="flex items-center">
+       <input class="w-1/2 p-2 rounded bg-gray-700 text-white" type="number" value="40"/>
+       <span class="ml-2">
+        %
+       </span>
+      </div>
+     </div>
+     <div class="mb-4">
+      <div class="text-sm">
+       Период
+      </div>
+      <div class="flex items-center">
+       <input class="w-1/4 p-2 rounded bg-gray-700 text-white" type="number" value="00"/>
+       <span class="mx-2">
+        :
+       </span>
+       <input class="w-1/4 p-2 rounded bg-gray-700 text-white" type="number" value="01"/>
+       <span class="mx-2">
+        :
+       </span>
+       <input class="w-1/4 p-2 rounded bg-gray-700 text-white" type="number" value="00"/>
+      </div>
+     </div>
+     <div class="mb-4">
+      <div class="text-sm">
+       Сумма
+      </div>
+      <input class="w-full p-2 rounded bg-gray-700 text-white" type="number" value="22.89"/>
+     </div>
+     <div class="mb-4">
+      <button class="btn-green w-full py-2 rounded mb-2">
+       КУПИТЬ
+      </button>
+      <button class="btn-red w-full py-2 rounded">
+       ПРОДАТЬ
+      </button>
+     </div>
+     <div class="text-sm">
+      Ваш баланс должен быть достаточен на момент совершения сделки. Выплата вознаграждения будет происходить согласно условиям на момент совершения сделки.
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
